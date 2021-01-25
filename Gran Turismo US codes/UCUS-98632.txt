@@ -6,11 +6,15 @@
 #engine
 0x2146B268 0x00000000
 
-#car color
+#car model id/car color
+0x2146B248 0x00000000
 0x2146B238 0x00000000
 
-#car model id
-0x2146B248 0x00000000
+#Front tire
+0x2146B290
+
+#Rear tire
+0x2146B298
 
 #ride height
 0x2146B36C 0x00000000
