@@ -5,11 +5,15 @@ _C0 ------------------------------
 _C0 engine
 _L 0x2146B268 0x00000000
 
-_C0 car color
+_C0 car model id/car color
+_L 0x2146B248 0x00000000
 _L 0x2146B238 0x00000000
 
-_C0 car model id
-_L 0x2146B248 0x00000000
+_C0 Front tire
+_L 0x2146B290
+
+_C0 Rear tire
+_L 0x2146B298
 
 _C0 ride height
 _L 0x2146B36C 0x00000000
