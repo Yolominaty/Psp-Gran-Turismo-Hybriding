@@ -84,7 +84,6 @@
 
 #Exhaust
 0x2146B300 0x00000000
-
 0x2146B304 0x00000014
 
 #Empty Exhaust
