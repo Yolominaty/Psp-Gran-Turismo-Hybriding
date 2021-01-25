@@ -1,4 +1,4 @@
-wonder how this codes work? You'll find it out here.
+Wonder how the codes work? You'll find it out here.
 
 engine						
 	0x2146B268 0x00000000	--	0x0000XXXX		X= a specific car's id
