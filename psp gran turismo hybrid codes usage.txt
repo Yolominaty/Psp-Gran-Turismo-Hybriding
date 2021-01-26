@@ -90,9 +90,9 @@ but the values would work like this if they weren't 32 bit:
 	
 0x2146B308	FF	FF	FF	FF		IC (doesnt work)
 0x2146B30C	FF	FF	FF	13	
-0x2146B310	00	00	00	2C		ASM Active stability manager, 2A = Type A, 2B = Type B, 2C = normal, 2D = off
+0x2146B310	00	00	00	2C		ASM (Active stability manager) 2A = Type A, 2B = Type B, 2C = normal, 2D = off
 0x2146B314	00	00	00	04	
-0x2146B318	00	00	00	10		TCS Traction controller, 0E = Type A, 10 = Type B, 0F = off
+0x2146B318	00	00	00	10		TCS (Traction controller) 0E = Type A, 10 = Type B, 0F = off
 
 0x2146B31C	00	00	00	05
 0x2146B320	FF	FF	FF	FF		Rims (doesnt work)
@@ -104,13 +104,13 @@ but the values would work like this if they weren't 32 bit:
 0x2146B338	FF	FF	FF	FF		SC (doesnt work)
 0x2146B33C	FF	FF	FF	1C
 	
-0x2146B340	10	83	0E	A2		1-R |
-0x2146B344	06	85	09	E0		2-3 |
-0x2146B348	03	E8	04	CA		4-5 | WRITE THE EXPLANATION HERE
-0x2146B34C	00	00	03	3C		6-7 |
+0x2146B340	XX	XX	YY	YY		X= 1st gear ratio	Y= reverse gear ratio		Gear ratio explanation at the bottom
+0x2146B344	XX	XX	YY	YY		X= 3rd gear ratio	Y= 2nd gear ratio
+0x2146B348	XX	XX	YY	YY		X= 5th gear ratio	Y= 4th gear ratio			The whole gear ratio is affected thy the engine itself
+0x2146B34C	XX	XX	YY	YY		X= 7th gear ratio	Y= 6th gear ratio
 0x2146B350	00	00	00	00
 0x2146B354	00	00	00	00	
-0x2146B358	00	00	0E	24		GAS (gear auto seting Works as final drive)
+0x2146B358	0X	XX	0Y	YY		GAS (Gear Auto Seting)	X= transmission type apparently (auto or manual)	Y= Final drive ratio
 
 0x2146B35C	01	00	0E	24		DFD (does nothing changing this)
 0x2146B360	00	FF	RR	01		Downforce F= front downforce 	R= rear downforce   (leave the rest of the code how it is 00----01)
@@ -130,3 +130,11 @@ but the values would work like this if they weren't 32 bit:
 0x2146B38C	00	00	28	00		steer lock same in all carss
 0x2146B390	00	00	00	64		master weight power
 0x2146B394	00	00	00	01	
+
+																		Example for gear ratios, same logic for final drive ratio:		0B650BB8	(f1 2007 1st and reverse gear ration)
+																		in this value you don't find a value higher than 4095 (FFF in decimal) that's why we use 0's as spacers,
+																		so we need to use a hex to decimal converter to convert these numbers, the fist number is B65 which in decimal is
+																		2917 which means a ratio of 2.917:1, you can't change the 1 at the end of the ratio, that's hard coded into the game,
+																		you need to look at the converted decimal value this way 	: 0.000 -> 2.917
+																		if you get a value with only 3 digits or less it's the same : 0.000 -> 0.123 (random number)
+																		and the less these values are the more top speed you get, but keep in mind you need the power too to reach it
