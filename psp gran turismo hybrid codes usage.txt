@@ -1,155 +1,132 @@
-Wonder how the codes work? You'll find it out here.
+You can ignore the "2" in the addresses, it's for cwcheat, that shows if the code is 8,16 or 32 bit,
+this number can be 0,1 and 2, these hybrid values are all 32 bit that's why you see the "2" there,
+but the values would work like this if they weren't 32 bit:
 
-engine						
-	0x2146B268 0x00000000	--	0x0000XXXX		X= a specific car's id
-							
-car model id/car color		
-	0x2146B248 0x00000000	--	0x00000000		These 2 codes work together, the top one is the actuall model id of a certain
-	0x2146B238 0x00000000	--	0x00000000		car and the second one is it's color, you have to use these codes together if
-												you want to change the actuall model of the car, you must chose a car and
-												check it's model id and it's color and transfer both to an other car in order
-												for it to work.
-							
-Front tire					
-	0x2146B290 0x00000000	--	0x00WWWGGG		W= tire width   G= grip
-							
-Rear tire					
-	0x2146B298 0x00000000	--	0x00WWWGGG		W= tire width   G= grip
-							
-ride height					
-	0x2146B36C 0x00000000	--	0x0FFF0RRR		X= front ride height   R= rear ride height
-							
-camber						
-	0x2146B368 0x00000000	--	0xRRRFFF00		R= rear canber   F= front camber
-							
-Weight Reduction			
-	0x2146B2A8 0x00000000	
-	0x2146B2AC 0x00000008	
-							
-Racing Clutch				
-	0x2146B2F0 0x00000CB9	
-	0x2146B2F4 0x00000015	
-							
-drivetrain					
-	0x2146B270 0x00000000	
-							
-LSD							
-	0x2146B288 0x00000000	
-							
-chasis						
-	0x2146B260 0x00000000	
-							
-Suspension					
-	0x2146B280 0x00000000	
-							
-Brake						
-	0x2146B250 0x00000000	
-							
-DownForce/Race mod			
-	0x2146B2B0 0x00000000	
-							
-DownForce 2					
-	0x2146B360 0x00000000	
-							
-Adjustable DownForce Low	
-	0x2146B2B0 0x00000906	
-							
-Adjustable DownForce High	
-	0x2146B2B0 0x0000090A	
-							
-Boost Controller			
-	0x2146B364 0x49AA7D23	
-	0x2146B2C0 0x00000000	
-	0x2146B2C4 0x00000010	
-							
-Turbo Stage 1				
-	0x2146B364 0x49AA7D23	
-	0x2146B2C0 0x00000000	
-	0x2146B2C4 0x00000010	
-							
-Turbo Stage 2				
-	0x2146B364 0x37607D23	
-	0x2146B2C0 0x00000000	
-	0x2146B2C4 0x00000010	
-							
-Turbo Stage 3				
-	0x2146B364 0x28707D23	
-	0x2146B2C0 0x00000000	
-	0x2146B2C4 0x00000010	
-							
-Turbo Stage 4				
-	0x2146B364 0X27567D23	
-	0x2146B2C0 0x00000000	
-	0x2146B2C4 0x00000010	
-							
-Exhaust						
-	0x2146B300 0x00000000	
-	0x2146B304 0x00000014	
-							
-Empty Exhaust				
-	0x2146B300 0xFFFFFFFF	
-	0x2146B304 0xFFFFFFFF	
-							
-Turbo Exhaust Sound			
-	0x2146B2E0 0x0000095C	
-	0x2146B2E4 0x0000000E	
-							
-NA ZO6 RC Exhaust			
-	0x2146B300 0x0000094D	
-	0x2146B304 0x00000014	
-							
-Boost GTR R35 RC Exhaust	
-	0x2146B300 0x000008CA	
-	0x2146B304 0x00000014	
-							
-GearBox GAS					
-	0x2146B358 0x00000000	
-							
-Transmition					
-	0x2146B278 0x00000000	
-							
-GearBox						
-	0x2146B340 0x00000000	--
-	0x2146B344 0x00000000	--
-	0x2146B348 0x00000000	--
-	0x2146B34C 0x00000000	--
-	0x2146B350 0x00000000	--
-	0x2146B354 0x00000000	--
-	0x2146B358 0x00000000	--
-							
-TRANNY (7Spd) M5			
-	0x2146B278 0x000010FE	
-							
-7spd M5 GearBox (TS 200mph)	
-	0x2146B340 0x0F960F91	
-	0x2146B344 0x07120A5A	
-	0x2146B348 0x0488056E	
-	0x2146B34C 0x033E03E8	
-	0x2146B350 0x00000000	
-	0x2146B354 0x00000000	
-	0x2146B358 0x00000A00	
-							
-TRANNY (6Spd) ZR1			
-	0x2146B278 0x000010FE	
-							
-6spd ZR1 GearBox			
-	0x2146B340 0x08F20C26	
-	0x2146B344 0x04BA064A	
-	0x2146B348 0x032A03E8	
-	0x2146B34C 0x0000029E	
-	0x2146B350 0x00000000	
-	0x2146B354 0x00000000	
-	0x2146B358 0x00000DC5	
-							
-TRANNY (5 Spd) Trueno		
-	0x2146B278 0x00000E40	
-							
-5spd GearBox (TP 200mph)	
-	0x2146B340 0x0E030D9C	
-	0x2146B344 0x056807E5	
-	0x2146B348 0x035D03E8	
-	0x2146B34C 0x00000000	
-	0x2146B350 0x00000000	
-	0x2146B354 0x00000000	
-	0x2146B358 0x00000A00	
-							
+0x0146B238	--	--	--	00		8 bit value
+0x1146B238	--	--	00	00		16 bit value
+0x2146B238	00	00	00	00		32 bit value
+
+(Unknown values don't have descriptions)
+
+0x2146B238	00	00	XX	XX		X= Car's model ID
+0x2146B23C	00	00	00	00		    		I			These 2 addresses have to be editet together, so if you want to put
+0x2146B240	00	00	00	00		 			I------->	a different model on then you need to also put the same
+0x2146B244	00	00	00	00					I			color value on from the same car you got it from
+0x2146B248	XX	XX	XX	XX		X= Car's body colour
+
+0x2146B24C	00	00	00	00
+	
+0x2146B250	00	00	XX	XX		X= Brake id
+
+0x2146B254	00	00	00	01
+	
+0x2146B258	00	00	04	A5		BRC same in all cars
+
+0x2146B25C	00	00	00	02
+	
+0x2146B260	00	00	XX	XX		X= Chassis
+
+0x2146B264	00	00	00	06	
+
+0x2146B268	00	00	XX	XX		X= Engine
+
+0x2146B26C	00	00	00	0C
+	
+0x2146B270	00	00	XX	XX		X= Drivetrain
+
+0x2146B274	00	00	00	0A
+	
+0x2146B278	00	00	XX	XX		X= Transmission
+
+0x2146B27C	00	00	00	0B
+	
+0x2146B280	00	00	XX	XX		X= Suspension
+
+0x2146B284	00	00	00	03
+	
+0x2146B288	00	00	XX	XX		Limited Slip Differential
+
+0x2146B28C	00	00	00	18
+	
+0x2146B290	00	WW	WG	GG		Front tire 	W= width	G= grip		(So far we've noticed that a width value higher than F will crash the game)
+0x2146B294	00	00	00	19
+0x2146B298	00	WW	WG	GG		Rear tire 	W= width	G= grip		(So far we've noticed that a width value higher than F will crash the game)
+
+0x2146B29C	00	00	00	1A
+	
+0x2146B2A0	00	00	00	0A		Steer same in al cars
+
+0x2146B2A4	00	00	00	09
+	
+0x2146B2A8	FF	FF	FF	FF		WR (Doesnt work)
+0x2146B2AC	FF	FF	FF	FF	
+0x2146B2B0	00	00	07	DC		Race Mod
+0x2146B2B4	00	00	00	07	
+0x2146B2B8	FF	FF	FF	FF		P&P (doesnt work)
+0x2146B2BC	FF	FF	FF	FF	
+0x2146B2C0	FF	FF	FF	FF		E.BAL (doesnt work)
+0x2146B2C4	FF	FF	FF	FF	
+0x2146B2C8	FF	FF	FF	FF		DPLM (doesnt work)
+0x2146B2CC	FF	FF	FF	FF	
+0x2146B2D0	FF	FF	FF	FF		Chip (doesnt work)
+0x2146B2D4	FF	FF	FF	FF	
+0x2146B2D8	FF	FF	FF	FF		NA (doesnt work)
+0x2146B2DC	FF	FF	FF	FF	
+0x2146B2E0	00	00	09	1D		Turbo ( this isnt turbo stage related i don know how it works)
+0x2146B2E4	00	00	00	0E	
+0x2146B2E8	FF	FF	FF	FF		FW (doesnt work)
+0x2146B2EC	FF	FF	FF	16	
+
+0x2146B2F0	00	00	XX	XX		X= Clutch  0CB8 = normal, 0CB9 = race (used in race cars)
+
+0x2146B2F4	00	00	00	XX		Clutch related value, not sure  what it does, this value is 15 usually, must be changed with clutch at the same time
+0x2146B2F8	FF	FF	FF	FF		DS (doesnt work)
+
+0x2146B2FC	FF	FF	FF	17
+	
+0x2146B300	00	00	XX	XX		X= Exhaust (Some cars use all FF value instead for proper exhaust sound)
+
+0x2146B304	FF	FF	FF	14		Exhaust related value, not sure what it does, this value is 14 usually, must be changed with exhaust at the same time
+	
+0x2146B308	FF	FF	FF	FF		IC (doesnt work)
+0x2146B30C	FF	FF	FF	13	
+0x2146B310	00	00	00	2C		ASM Active stability manager, 2A = Type A, 2B = Type B, 2C = normal, 2D = off
+0x2146B314	00	00	00	04	
+0x2146B318	00	00	00	10		TCS Traction controller, 0E = Type A, 10 = Type B, 0F = off
+
+0x2146B31C	00	00	00	05
+0x2146B320	FF	FF	FF	FF		Rims (doesnt work)
+0x2146B324	FF	FF	FF	1D	
+0x2146B328	FF	FF	FF	FF		NOS (doesnt work)
+0x2146B32C	FF	FF	FF	1B	
+0x2146B330	FF	FF	FF	FF		Wing (doesnt work)
+0x2146B334	FF	FF	FF	1E	
+0x2146B338	FF	FF	FF	FF		SC (doesnt work)
+0x2146B33C	FF	FF	FF	1C
+	
+0x2146B340	10	83	0E	A2		1-R |
+0x2146B344	06	85	09	E0		2-3 |
+0x2146B348	03	E8	04	CA		4-5 | WRITE THE EXPLANATION HERE
+0x2146B34C	00	00	03	3C		6-7 |
+0x2146B350	00	00	00	00
+0x2146B354	00	00	00	00	
+0x2146B358	00	00	0E	24		GAS (gear auto seting Works as final drive)
+
+0x2146B35C	01	00	0E	24		DFD (does nothing changing this)
+0x2146B360	00	FF	RR	01		Downforce F= front downforce 	R= rear downforce   (leave the rest of the code how it is 00----01)
+ 
+0x2146B364	00	00	00	00		Turbo ID dont know how this works
+
+0x2146B368	FF	FR	RR	00		Camber F= front camber		R= rear camber
+0x2146B36C	0F	FF	0R	RR		Ride height F= front 	R= rear
+0x2146B370	SR	SF	TR	TF		Spring and Toe (s- spring T- toe F-front R-rear)  SR= rear spring 	SF= front spring 	TR= rear toe	TF= front toe
+0x2146B374	FF	FF	4E	5A		DMP F-front need to match all F's
+0x2146B378	RR	RR	FF	FF		DMP R-rear need to match all R's
+0x2146B37C	01	01	RR	RR
+	
+0x2146B380	1E	00	07	00		LSD ? R F R F
+0x2146B384	15	00	0F	00		TCS
+0x2146B388	00	0B	0B	15	
+0x2146B38C	00	00	28	00		steer lock same in all carss
+0x2146B390	00	00	00	64		master weight power
+0x2146B394	00	00	00	01	
