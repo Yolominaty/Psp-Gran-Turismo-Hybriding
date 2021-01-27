@@ -58,19 +58,19 @@ but the values would work like this if they weren't 32 bit:
 
 0x2146B2A4	00	00	00	09
 	
-0x2146B2A8	FF	FF	FF	FF		WR (Doesnt work)
+0x2146B2A8	FF	FF	FF	FF		WR (Weight Reduction)(Doesnt work)
 0x2146B2AC	FF	FF	FF	FF	
 0x2146B2B0	00	00	07	DC		Race Mod
 0x2146B2B4	00	00	00	07	
 0x2146B2B8	FF	FF	FF	FF		P&P (doesnt work)
 0x2146B2BC	FF	FF	FF	FF	
-0x2146B2C0	FF	FF	FF	FF		E.BAL (doesnt work)
+0x2146B2C0	FF	FF	FF	FF		E.BAL (Engine Balance)(doesnt work)
 0x2146B2C4	FF	FF	FF	FF	
-0x2146B2C8	FF	FF	FF	FF		DPLM (doesnt work)
+0x2146B2C8	FF	FF	FF	FF		DPLM (Displacement)(doesnt work)
 0x2146B2CC	FF	FF	FF	FF	
 0x2146B2D0	FF	FF	FF	FF		Chip (doesnt work)
 0x2146B2D4	FF	FF	FF	FF	
-0x2146B2D8	FF	FF	FF	FF		NA (doesnt work)
+0x2146B2D8	FF	FF	FF	FF		NA (Naturally Aspirated)(doesnt work)
 0x2146B2DC	FF	FF	FF	FF	
 0x2146B2E0	00	00	09	1D		Turbo ( this isnt turbo stage related i don know how it works)
 0x2146B2E4	00	00	00	0E	
@@ -80,7 +80,7 @@ but the values would work like this if they weren't 32 bit:
 0x2146B2F0	00	00	XX	XX		X= Clutch  0CB8 = normal, 0CB9 = race (used in race cars)
 
 0x2146B2F4	00	00	00	XX		Clutch related value, not sure  what it does, this value is 15 usually, must be changed with clutch at the same time
-0x2146B2F8	FF	FF	FF	FF		DS (doesnt work)
+0x2146B2F8	FF	FF	FF	FF		DS (Drive Shaft)(doesnt work)
 
 0x2146B2FC	FF	FF	FF	17
 	
@@ -101,7 +101,7 @@ but the values would work like this if they weren't 32 bit:
 0x2146B32C	FF	FF	FF	1B	
 0x2146B330	FF	FF	FF	FF		Wing (doesnt work)
 0x2146B334	FF	FF	FF	1E	
-0x2146B338	FF	FF	FF	FF		SC (doesnt work)
+0x2146B338	FF	FF	FF	FF		SC (Super Charger) (doesnt work)
 0x2146B33C	FF	FF	FF	1C
 	
 0x2146B340	XX	XX	YY	YY		X= 1st gear ratio	Y= reverse gear ratio		Gear ratio explanation at the bottom
@@ -120,8 +120,8 @@ but the values would work like this if they weren't 32 bit:
 0x2146B368	FF	FR	RR	00		Camber F= front camber		R= rear camber
 0x2146B36C	0F	FF	0R	RR		Ride height F= front 	R= rear
 0x2146B370	SR	SF	TR	TF		Spring and Toe (s- spring T- toe F-front R-rear)  SR= rear spring 	SF= front spring 	TR= rear toe	TF= front toe
-0x2146B374	FF	FF	4E	5A		DMP F-front need to match all F's
-0x2146B378	RR	RR	FF	FF		DMP R-rear need to match all R's
+0x2146B374	FF	FF	4E	5A		DMP (Dampening) F-front need to match all F's
+0x2146B378	RR	RR	FF	FF		DMP (Dampening) R-rear need to match all R's
 0x2146B37C	01	01	RR	RR
 	
 0x2146B380	1E	00	07	00		LSD ? R F R F
