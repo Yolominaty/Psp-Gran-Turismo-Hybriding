@@ -10,13 +10,13 @@ but the values would work like this if they weren't 32 bit:
 
 0x2146B238	00	00	XX	XX		X= Car's model ID
 0x2146B23C	00	00	00	00		    		I			These 2 addresses have to be editet together, so if you want to put
-0x2146B240	00	00	00	00		 			I------->	a different model on then you need to also put the same
-0x2146B244	00	00	00	00					I			color value on from the same car you got it from
+0x2146B240	00	00	00	00		 		I------->	a different model on then you need to also put the same
+0x2146B244	00	00	00	00				I			color value on from the same car you got it from
 0x2146B248	XX	XX	XX	XX		X= Car's body colour
 
 0x2146B24C	00	00	00	00
 	
-0x2146B250	00	00	XX	XX		X= Brake id
+0x2146B250	00	00	XX	XX		X= Brake id        in theory this is the e-brake
 
 0x2146B254	00	00	00	01
 	
