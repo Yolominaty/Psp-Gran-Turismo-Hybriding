@@ -74,7 +74,7 @@ but the values would work like this if they weren't 32 bit:
 0x2146B2DC	FF	FF	FF	FF	
 0x2146B2E0	00	00	09	1D		Turbo ( this isnt turbo stage related i don know how it works)
 0x2146B2E4	00	00	00	0E	
-0x2146B2E8	FF	FF	FF	FF		FW (doesnt work)
+0x2146B2E8	FF	FF	FF	FF		FW (Flywheel)(doesnt work)
 0x2146B2EC	FF	FF	FF	16	
 
 0x2146B2F0	00	00	XX	XX		X= Clutch  0CB8 = normal, 0CB9 = race (used in race cars)
